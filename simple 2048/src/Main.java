@@ -35,10 +35,6 @@ public class Main {
         for (int y=0; y<screen.length; y++){
             for (int x=0; x<screen[0].length; x++)
             {
-//                if (y ==tileY && x== tileX) {
-//                    screen[tileY][tileX]=2;
-//                    System.out.print("2");
-//                }
                 if (listFree.contains(y) && listFree.contains(x))
                     System.out.print(screen[y][x]);
                 else
@@ -271,38 +267,5 @@ public class Main {
         System.out.print("game over");
     }
     }
-//        System.out.println("Hello world!");
-//        //System.out.println("Hello world!");
-////        Pacman pacman = new Pacman(5, 5);
-////
-////        List<Ghost> ghosts = new ArrayList<>();
-////        ghosts.add(new Ghost(6, 7, -1, 0));
-////        ghosts.add(new Ghost(10, 17, 0, 1));
-//        List<Tile> tiles= new ArrayList<>();
-//        Screen screen = new Screen();
-//
-//        Renderer renderer = new Renderer(screen);
-//        renderer.renderGame();
-////        GameRules rules   = new GameRules(maze, pacman, ghosts);
-//
-////        while(rules.gameOver == false) {
-////
-////            renderer.renderGame();
-////
-////            byte userInput = readUserInput();
-////
-////            rules.processUserInput(userInput);
-////
-////            rules.moveElements();
-////        }
-//
-//        //}
-//
-////    private static byte readUserInput() throws IOException {
-////        byte bytes[] = new byte[10];
-////        System.in.read(bytes);
-////        byte userInput = bytes[0];
-////        return userInput;
-////    }
     }
 }
